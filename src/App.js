@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Person from './Person/Person';
 
 class App extends Component {
@@ -25,7 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Hello react</h1>
+        <h1 className="Title">Hello react</h1>
         <h2>Krztsztof Tomecki</h2>
         <button onClick={this.switchNameHandler}>Switch Name</button>
         <Person name={ this.state.persons[0].name } age={this.state.persons[0].age} />
